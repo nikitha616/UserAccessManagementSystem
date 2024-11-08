@@ -67,19 +67,22 @@ Update the database credentials in the DatabaseConnection class or in the .env f
 
 3. Configure Environment Variables (Optional)
    If you’re using environment variables for database credentials, create a .env file in the root of your project with the following variables:
+   
    DB_URL=jdbc:postgresql://localhost:5432/user_access_management
+   
    DB_USER=your_database_username
+   
    DB_PASSWORD=your_database_password
 
-4. Build the Project with Maven
+5. Build the Project with Maven
    Run the following command to build the project and resolve dependencies:
    mvn clean install
 
-5. Deploy to Tomcat
+6. Deploy to Tomcat
    Copy the generated .war file (located in target/UserAccessManagementSystem.war) to the Tomcat webapps directory.
    Start your Tomcat server.
 
-6. Access the Application
+7. Access the Application
    Once the server is running, access the application in your browser:
    http://localhost:8080/UserAccessManagementSystem
 
