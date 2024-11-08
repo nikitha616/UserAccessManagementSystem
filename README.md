@@ -3,6 +3,7 @@ User Access Management System
 Overview
 
 The User Access Management System is a web-based application that enables organizations to manage user access to various software applications. The system includes three primary user roles: Employee, Manager, and Admin.
+
 Employees can sign up, log in, and request access to software applications.
 Managers can review and approve or reject access requests.
 Admins can create new software applications and manage system settings.
@@ -60,6 +61,7 @@ access_type TEXT,
 reason TEXT,
 status TEXT
 );
+
 Insert initial roles (e.g., Employee, Manager, Admin) if required by your setup.
 Update the database credentials in the DatabaseConnection class or in the .env file.
 
