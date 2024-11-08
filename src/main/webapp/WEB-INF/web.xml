@@ -1,0 +1,90 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <display-name>User Access Management</display-name>
+
+    <!-- Servlet configuration -->
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.example.useraccessmanagement.servlets.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    <servlet-name>RequestServlet</servlet-name>
+    <servlet-class>com.example.useraccessmanagement.servlets.RequestServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>RequestServlet</servlet-name>
+    <url-pattern>/RequestServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>SoftwareServlet</servlet-name>
+    <servlet-class>com.example.useraccessmanagement.servlets.SoftwareServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>SoftwareServlet</servlet-name>
+    <url-pattern>/SoftwareServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>ApprovalServlet</servlet-name>
+    <servlet-class>com.example.useraccessmanagement.servlets.ApprovalServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>ApprovalServlet</servlet-name>
+    <url-pattern>/ApprovalServlet</url-pattern>
+</servlet-mapping>
+
+    
+    <servlet>
+        <servlet-name>SignUpServlet</servlet-name>
+        <servlet-class>com.example.useraccessmanagement.servlets.SignUpServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SignUpServlet</servlet-name>
+        <url-pattern>/SignUpServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RequestAccessServlet</servlet-name>
+        <servlet-class>com.example.useraccessmanagement.servlets.RequestAccessServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RequestAccessServlet</servlet-name>
+        <url-pattern>/RequestAccessServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>PendingRequestsServlet</servlet-name>
+        <servlet-class>com.example.useraccessmanagement.servlets.PendingRequestsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PendingRequestsServlet</servlet-name>
+        <url-pattern>/PendingRequestsServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- JSP Configuration -->
+    <jsp-config>
+        <jsp-property-group>
+            <url-pattern>*.jsp</url-pattern>
+        </jsp-property-group>
+    </jsp-config>
+
+    <welcome-file-list>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
+
+    <error-page>
+        <error-code>404</error-code>
+        <location>/error.jsp</location>
+    </error-page>
+
+</web-app>
