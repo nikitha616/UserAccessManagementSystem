@@ -37,6 +37,7 @@ Setup Instructions
    Create a new PostgreSQL database. For example:
 
 CREATE DATABASE user_access_management;
+
 Set up the tables using the following schema:
 
 CREATE TABLE users (
@@ -76,13 +77,14 @@ Update the database credentials in the DatabaseConnection class or in the .env f
 
 5. Build the Project with Maven
    Run the following command to build the project and resolve dependencies:
+   
    mvn clean install
 
-6. Deploy to Tomcat
+7. Deploy to Tomcat
    Copy the generated .war file (located in target/UserAccessManagementSystem.war) to the Tomcat webapps directory.
    Start your Tomcat server.
 
-7. Access the Application
+8. Access the Application
    Once the server is running, access the application in your browser:
    http://localhost:8080/UserAccessManagementSystem
 
